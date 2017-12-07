@@ -1,0 +1,28 @@
+{
+  "name": "ngx-responsive-stack-table",
+  "version": "1.0.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hsripathi/ngx-responsive-stack-table"
+  },
+  "author": {
+    "name": "Sripathi H",
+    "email": "h.sripathi@hotmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hsripathi/ngx-responsive-stack-table/issues"
+  },
+  "main": "ngx-responsive-stack-table.umd.js",
+  "module": "ngx-responsive-stack-table.js",
+  "jsnext:main": "ngx-responsive-stack-table.js",
+  "typings": "ngx-responsive-stack-table.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}

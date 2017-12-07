@@ -1,0 +1,66 @@
+
+/* for stack table */
+@media only screen and (max-width: 768px) {
+	
+	/* Force table to not be like tables anymore */
+	table.ngx-responsive-stack-table,
+	table.ngx-responsive-stack-table thead, 
+	table.ngx-responsive-stack-table tbody, 
+	table.ngx-responsive-stack-table th, 
+	table.ngx-responsive-stack-table td, 
+	table.ngx-responsive-stack-table tr { 
+		display: block; 
+	}
+ 
+	/* Hide table headers (but not display: none;, for accessibility) */
+	table.ngx-responsive-stack-table thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+    table.ngx-responsive-stack-table > tbody > tr 
+    { 		
+        height: auto; 
+        margin: 10px;
+        box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.02), 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+	}
+ 
+	/* table.multi-row-table td, */
+	table.ngx-responsive-stack-table > tbody > tr > td
+	{ 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50% !important; 
+		white-space: normal;
+		text-align:left;
+		height: auto;
+		min-height: 30px;
+		width: initial;
+		/* for IE */
+		width: auto;
+		
+	}
+ 
+	table.ngx-responsive-stack-table > tbody > tr > td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		/* top: 6px; */
+		left: 10px;
+		/* width: 45%; */ 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+	}
+ 
+	/*
+	Label the data
+	*/
+	table.ngx-responsive-stack-table > tbody > tr > td:before { 
+		content: attr(data-title)": "; 
+	}
+}
